@@ -1,0 +1,18 @@
+<h1> Menu</h1>
+{{#each burgerData}}
+  <pre>
+    {{id}}. {{burger_name}}  Eaten? {{devoured}}
+    <form action="/update/{{ id }}" method="post">
+      {{id}}. <input type="text" value="{{burger_name}}" name="item">
+      <button type="submit">Devour</button>
+      <a href="/delete/{{ id }}">delete</a>
+    </form>   
+  </pre>
+{{/each}}
+
+
+
+<form action="/create" method="post">
+  <textarea name="item" rows="8" cols="40"></textarea>
+  <button type="submit">Enter Your Burger</button>
+<form>

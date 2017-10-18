@@ -1,8 +1,8 @@
 var orm = require("../config/orm.js");
 
 var burgerQueries = {
-  show: function (cb) {
-    orm.showBurgers('tableName', function (res) {
+  showAll: function (cb) {
+    orm.showAll('tableName', function (res) {
       cb(res);
     });
   },

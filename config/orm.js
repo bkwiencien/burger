@@ -28,8 +28,8 @@ var orm = {
       cb(result);
     });
   },
-  showBurgers: function(tableName, cb) {
-  connection.query('SELECT * FROM burgers', function(err, result) {
+  showAll: function(tableName,cb){  
+  connection.query('select  * from burgers', function(err, result) {
       if (err) throw err;
       cb(result);
   });

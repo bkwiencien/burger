@@ -28,7 +28,7 @@ var orm = {
       cb(result);
     });
   },
-  showAll: function(tableName,cb){  
+  selectAll: function(tableName,cb){  
   connection.query('select  * from burgers', function(err, result) {
       if (err) throw err;
       cb(result);

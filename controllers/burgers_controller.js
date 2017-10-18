@@ -3,7 +3,7 @@ var router = express.Router();
 var queries = require('../models/burger.js');
 
 router.get('/', function (req, res) {
-    queries.showAll(function(data){
+    queries.selectAll(function(data){
         var data_obj = {
             burgerData: data
         }

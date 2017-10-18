@@ -1,8 +1,8 @@
 var orm = require("../config/orm.js");
 
 var burgerQueries = {
-  showAll: function (cb) {
-    orm.showAll('tableName', function (res) {
+  selectAll: function (cb) {
+    orm.selectAll('tableName', function (res) {
       cb(res);
     });
   },

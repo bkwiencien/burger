@@ -22,9 +22,3 @@ app.use('/', routes);
 app.listen(PORT, function() {
   console.log("Listening at %s", PORT);
 });
-
-//used to test res.send
-// app.get('/', function (req, res) {
-//         res.send('Hello World');
-// });
-//connection.end();

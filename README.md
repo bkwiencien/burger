@@ -19,3 +19,5 @@ It is "seeded" with the following:
 insert into burgers (burger_name) values ('classic cheeseburger');
 insert into burgers (burger_name) values ('double cheeseburger');
 insert into burgers (burger_name) values ('triple cheeseburger');
+#Video Demo
+!video [demo] (./docs/QuickTimeDemo.mov)

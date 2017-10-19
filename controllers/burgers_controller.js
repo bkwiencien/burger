@@ -12,14 +12,14 @@ router.get('/', function (req, res) {
 });
 
 router.post('/create', function (req, res) {
-    queries.add(req.body.burger_name, function(data) {
+    queries.insertOne(req.body.burger_name, function(data) {
         res.redirect('/');
     });
 });
 
 router.post('/update/:id', function (req, res) {
     console.log("I eat the burger");
-    queries.eat(req.params.id, function(data) {
+    queries.updateOne(req.params.id, function(data) {
         res.redirect('/');
     });
 });

@@ -6,13 +6,13 @@ var burgerQueries = {
       cb(res);
     });
   },
-  add: function (burgerName, cb) {
-    console.log('in add burger burgerName = ' + burgerName);
+  insertOne: function (burgerName, cb) {
+    console.log('in insertOne burger burgerName = ' + burgerName);
       orm.insertOne(burgerName, function(res){
       cb(res);
     });
   },
-  eat: function (burgerId, cb) {
+  updateOne: function (burgerId, cb) {
     console.log("in orm eat");
     orm.updateOne(burgerId, function (res){
       cb(res);

@@ -18,10 +18,10 @@ var orm = {
       cb(result);  
     });
    } else {
-   // alert("burger must have a name");
+     console.log("burgerName must not be blank");
    } 
   },
-  eatBurger: function(burgerId, cb) {
+    updateOne: function(burgerId,cb) {
     var id = burgerId;
     connection.query("update burgers set devoured=1 where id=?", [id], function(err, result) {
       if (err) throw err;

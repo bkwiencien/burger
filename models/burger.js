@@ -14,7 +14,7 @@ var burgerQueries = {
   },
   eat: function (burgerId, cb) {
     console.log("in orm eat");
-    orm.eatBurger(burgerId, function (res){
+    orm.updateOne(burgerId, function (res){
       cb(res);
     })
   }

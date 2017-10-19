@@ -8,7 +8,7 @@ connection.connect(function(err) {
 });
 
 var orm = {
-  addBurger: function(burger, cb) {
+    insertOne: function(burger,cb) {
     var burgerName = burger;
     var mySQLQuery = "insert into burgers (burger_name) values ('" + burgerName + "')";
     console.log("doing the insert burger = " + burger);

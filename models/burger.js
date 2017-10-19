@@ -8,7 +8,7 @@ var burgerQueries = {
   },
   add: function (burgerName, cb) {
     console.log('in add burger burgerName = ' + burgerName);
-    orm.addBurger(burgerName, function (res){
+      orm.insertOne(burgerName, function(res){
       cb(res);
     });
   },
